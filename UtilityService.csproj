@@ -6,9 +6,15 @@
     <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.1.28" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DTOLibrary">
+      <HintPath>..\DTOLibrary\bin\Debug\net8.0\DTOLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceLibrary">
+      <HintPath>..\ServiceLibrary\bin\Debug\net8.0\ServiceLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
